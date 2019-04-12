@@ -365,6 +365,8 @@ define([
       maximumSelectionLength: 0,
       minimumResultsForSearch: 0,
       selectOnClose: false,
+      scrollAfterSelect: false,
+      unselectByEnter: false,
       sorter: function (data) {
         return data;
       },
@@ -387,7 +389,7 @@ define([
 
     var convertedData = Utils._convertData(data);
 
-    $.extend(this.defaults, convertedData);
+    $.extend(true, this.defaults, convertedData);
   };
 
   var defaults = new Defaults();

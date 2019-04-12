@@ -1,39 +1,40 @@
 define(function () {
-  // Korean
+  // Turkmen
   return {
-    errorLoading: function () {
-      return '결과를 불러올 수 없습니다.';
+    errorLoading: function (){
+      return 'Netije ýüklenmedi.';
     },
     inputTooLong: function (args) {
       var overChars = args.input.length - args.maximum;
 
-      var message = '너무 깁니다. ' + overChars + ' 글자 지워주세요.';
+      var message = overChars + ' harp bozuň.';
 
       return message;
     },
     inputTooShort: function (args) {
       var remainingChars = args.minimum - args.input.length;
 
-      var message = '너무 짧습니다. ' + remainingChars + ' 글자 더 입력해주세요.';
+      var message = 'Ýene-de iň az ' + remainingChars + ' harp ýazyň.';
 
       return message;
     },
     loadingMore: function () {
-      return '불러오는 중…';
+      return 'Köpräk netije görkezilýär…';
     },
     maximumSelected: function (args) {
-      var message = '최대 ' + args.maximum + '개까지만 선택 가능합니다.';
+      var message = 'Diňe ' + args.maximum + ' sanysyny saýlaň.';
 
       return message;
     },
     noResults: function () {
-      return '결과가 없습니다.';
+      return 'Netije tapylmady.';
     },
     searching: function () {
-      return '검색 중…';
+      return 'Gözlenýär…';
     },
     removeAllItems: function () {
-      return '모든 항목 삭제';
+      // TO DO : add in turkmen,
+      return 'Remove all items';
     }
   };
 });
